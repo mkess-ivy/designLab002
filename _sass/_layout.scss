@@ -1,0 +1,200 @@
+/* TOC
+
+
+
+
+
+
+*/
+
+.layout-wrapper {
+	width: 290px;
+	margin: 0 auto;
+
+	@include tablet {
+		width: 500px;
+	}
+
+	@include desktop {
+		width: 600px;
+	}
+}
+
+.container {
+	border: 1px solid $brand-color;
+	/*margin: 0 0 4em;*/
+	text-align: center;
+}
+
+.container-w {
+	border: 1px solid white;
+}
+
+.spacer {
+	height: 7em;
+}
+.spacer2 {
+	height: 5em;
+}
+
+.text-header {
+	color: $brand-color;
+	text-transform: uppercase;
+    top: -0.8em;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+    @include tablet {
+    	font-size: 24px;
+    }
+}
+
+.text-header_w {
+	color: white;
+	background: none;
+}
+
+.text-paragraph {
+	color: $brand-color;
+	padding: 1em 1em 2em;
+	font-weight: 300;
+
+	@include tablet {
+		padding: 1em 4em 2em;
+	}
+}
+
+.text-paragraph p {
+	padding-bottom: 1em;
+}
+
+.alt-text { color: white; }
+
+.btn { 
+	padding: 0.5em;
+    display: block;
+    background: $brand-color;
+    width: 50%;
+    margin: 0 auto;
+    color: $text-color;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 2em;
+
+    @include tablet {
+    	width: 30%;
+    }
+}
+
+/* Hero */
+.hero { 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hero1 { 
+	background-image: url('/assets/hero.jpg');
+	height: 100vh;
+}
+
+.hero2 {
+	background-image: url('/assets/hero2.jpg');
+}
+
+.hero-section {
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 10em;
+	color: $text-color;
+
+	@include tablet {
+		padding-top: 15em;
+	}
+}
+
+.hero-text_paragraph {
+	padding-bottom: 6em;
+}
+
+.hero-text {
+	font-size: 40px;
+	line-height: 1em;
+	padding: 2em 0;
+	font-weight: 700;
+	letter-spacing: 4px;
+
+	@include tablet {
+		font-size: 50px;
+		padding: 1em 0;
+	}
+
+	@include desktop {
+		font-size: 60px;
+	}
+}
+
+.container-product {
+	padding: 3em 0 1em;
+}
+
+.product-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 1.2em 0;
+    font-size: 16px;
+    letter-spacing: 3px;
+
+    @include tablet {
+    	font-size: 18px;
+    }
+}
+
+.product-text {
+	font-size: 14px;
+}
+
+.col-row {
+	width: 100%;
+}
+
+.col25 {
+	width: 100%;
+	float: left;
+	border-bottom: 2px solid white;
+
+	@include tablet {
+		width: 24.9%;
+	}
+	@include desktop {
+		width: 25%;
+	}
+}
+.col50 {
+	width: 100%;
+	float: left;
+	border-left: 2px solid white;
+	border-right: 2px solid white;	
+
+	@include tablet {
+		width: 49.6%;
+	}
+}
+
+.bg1 { background-image: url('/assets/img-sm1.jpg'); height: 35vh;}
+.bg2 { background-image: url('/assets/img-lg1.jpg'); height: 35vh;}
+.bg3 { background-image: url('/assets/img-med1.jpg'); height: 35vh;}
+.bg4 { background-image: url('/assets/img-sm2.jpg'); height: 35vh;}
+.bg5 { background-image: url('/assets/img-lg2.jpg'); height: 35vh;}
+.bg6 { background-image: url('/assets/img-med2.jpg'); height: 35vh;}
+
+.footer-section {
+	text-align: center;
+	padding-bottom: 2em;
+}
